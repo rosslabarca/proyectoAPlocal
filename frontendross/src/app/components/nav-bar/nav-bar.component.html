@@ -1,0 +1,17 @@
+<div class="px-3 py-2 bg-dark text-white">
+  <div class="container-fluid">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+      <a href="https://argentinaprograma.inti.gob.ar" target="_blank" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+        <img src="./assets/imagenes/APLogo-20-20.png" class="bi me-2" width="200px" height="100px" role="img">
+        <img src="./assets/imagenes/LogosInti.png" class="bi me-2" width="150px" height="75px" role="img">
+      </a>
+      <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">         
+        <li><a href="/login/https://instagram.com" target="_blank"><img src="./assets/imagenes/icons8-instagram-48.png" height="25px"></a></li>
+        <li><a href="https://linkedin.com" target="_blank"><img src="./assets/imagenes/icons8-linkedin-48.png" height="25px"></a></li>
+        <li><a href="https://whatsapp.com" target="_blank"><img src="./assets/imagenes/icons8-whatsapp-48.png" height="25px"></a></li>        
+      </ul>
+      <button type="button" class="btn btn-outline-secondary" (click)="login()" *ngIf="!isLogged">Login</button>    
+      <button type="button" class="btn btn-outline-secondary" (click)="onLogOut()" *ngIf="isLogged">LogOut</button>  
+    </div>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+<div class=" container d-flex justify-content-md-center align-items-center" *ngIf="persona">
+
+
+
+    <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+  
+        <img class="mb-4" src="./assets/imagenes/logo_Arg_Pro.png" width="72" height="57">
+        <h1 class="h3 mb-3 fw-normal">
+          <p class="text-light">Editar Persona </p></h1>
+          
+        <div class="form-group">
+          <input type="text" id="nombre" name="nombre" class="form-control form-control-lg" [(ngModel)]="persona.nombre" name="nombre" required>
+          <label class="form-label text-light" for="nombre">Nombre Completo</label>
+        </div>
+          
+        <div class="form-group">
+          <input type="text" id="profesion" class="form-control form-control-lg" [(ngModel)]="persona.profesion" name="profesion" required />
+          <label class="form-label text-light" for="profesion" >Profesión</label>
+        </div>
+
+        <div class="form-group">
+            <input type="text" id="locacion" name="locacion" class="form-control form-control-lg" [(ngModel)]="persona.locacion" name="locacion" required />
+            <label class="form-label text-light" for="locacion">Localidad</label>
+        </div>
+
+
+        <div class="form-group">
+            <input type="url" id="imgProfile" name="imgProfile" class="form-control form-control-lg" [(ngModel)]="persona.imgProfile" name="imgProfile" required />
+            <label class="form-label text-light" for="imgProfile">Imágen de Perfil</label>
+        </div>
+           
+         <div class="form-group">
+            <input type="text" id="acercaDe" name="acercaDe" class="form-control form-control-lg" [(ngModel)]="persona.acercaDe" name="acercaDe" required />
+            <label class="form-label text-light" for="acercaDe">Descripción Personal</label>
+        </div>
+           
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Actualizar Persona</button>
+          
+    </form>
+    </div>

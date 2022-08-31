@@ -1,0 +1,45 @@
+<div class=" container d-flex justify-content-md-center align-items-center">
+
+
+
+    <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+  
+        <img class="mb-4" src="./assets/imagenes/logo_Arg_Pro.png" width="72" height="57">
+        <h1 class="h3 mb-3 fw-normal">
+          <p class="text-light">Nueva Educación </p></h1>
+          
+        <div class="form-group">
+          <input type="text" id="nombreE" name="nombreE" class="form-control form-control-lg" [(ngModel)]="nombreE" name="nombreE" required />
+          <label class="form-label text-light" for="nombreE">Titulo</label>
+        </div>
+          
+        <div class="form-group">
+          <input type="text" id="descripcionE" class="form-control form-control-lg" [(ngModel)]="descripcionE" name="descripcionE" required />
+          <label class="form-label text-light" for="descripcionE" >Universidad</label>
+        </div>
+         
+        <div class="form-group">
+            <input type="date" id="fechaIni" name="fechaIni" class="form-control form-control-lg" [(ngModel)]="fechaIni" name="fechaIni" required />
+            <label class="form-label text-light" for="fechaIni">yyyy-mm-dd</label>
+        </div>
+      
+        <div class="form-group">
+            <input type="date" id="fechaFin" name="fechaFin" class="form-control form-control-lg" [(ngModel)]="fechaFin" name="fechaFin" required />
+            <label class="form-label text-light" for="fechaFin">yyyy-mm-dd</label>
+        </div>
+             
+        <div class="form-group">
+            <input type="url" id="imagen" name="imagen" class="form-control form-control-lg" [(ngModel)]="imagen" name="imagen" required />
+            <label class="form-label text-light" for="imagen">url</label>
+        </div>
+
+        <div class="form-group">
+          <input type="url" id="urlEdu" name="urlEdu" class="form-control form-control-lg" [(ngModel)]="urlEdu" name="urlEdu" required />
+          <label class="form-label text-light" for="urlEdu">url</label>
+      </div>
+              
+           
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Agregar Educación</button>
+          
+    </form>
+    </div>

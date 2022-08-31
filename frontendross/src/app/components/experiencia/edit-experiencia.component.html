@@ -1,0 +1,45 @@
+<div class=" container d-flex justify-content-md-center align-items-center" *ngIf="expLab">
+
+
+
+    <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+  
+        <img class="mb-4" src="./assets/imagenes/logo_Arg_Pro.png" width="72" height="57">
+        <h1 class="h3 mb-3 fw-normal">
+          <p class="text-light">Experiencia Nueva </p></h1>
+          
+        <div class="form-group">
+          <input type="text" id="nombreE" name="nombreE" class="form-control form-control-lg" [(ngModel)]="expLab.nombreE" name="nombreE" required />
+          <label class="form-label text-light" for="nombreE">Nombre de la Experiencia</label>
+        </div>
+          
+        <div class="form-group">
+          <input type="text" id="descripcionE" class="form-control form-control-lg" [(ngModel)]="expLab.descripcionE" name="descripcionE" required />
+          <label class="form-label text-light" for="descripcionE" >Descripcion de la Experiencia</label>
+        </div>
+
+        <div class="form-group">
+          <input type="date" id="fechaIni" name="fechaIni" class="form-control form-control-lg" [(ngModel)]="expLab.fechaIni" name="fechaIni" required />
+          <label class="form-label text-light" for="nombreE">yyyy-mm-dd</label>
+        </div>
+
+        <div class="form-group">
+            <input type="date" id="fechaFin" name="fechaFin" class="form-control form-control-lg" [(ngModel)]="expLab.fechaFin" name="fechaFin" required />
+            <label class="form-label text-light" for="fechaFin">yyyy-mm-dd</label>
+        </div>
+      
+        <div class="form-group">
+          <input type="url" id="imagenE" name="imagenE" class="form-control form-control-lg" [(ngModel)]="expLab.imagenE" name="imagenE" required />
+          <label class="form-label text-light" for="imagenE">url</label>
+        </div>
+
+        <div class="form-group">
+            <input type="url" id="urlE" name="urlE" class="form-control form-control-lg" [(ngModel)]="expLab.urlE" name="urlE" required />
+            <label class="form-label text-light" for="urlE">url</label>
+        </div>   
+        
+           
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Actualizar Experiencia</button>
+          
+    </form>
+    </div>

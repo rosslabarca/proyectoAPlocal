@@ -1,0 +1,37 @@
+<div class=" container d-flex justify-content-md-center align-items-center">
+
+
+
+  <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+
+      <img class="mb-4" src="./assets/imagenes/logo_Arg_Pro.png" width="72" height="57">
+      <h1 class="h3 mb-3 fw-normal">
+        <p class="text-light">Please sign in </p></h1>
+        
+      <div class="form-label">
+        <input type="user" id="nombreUsuario" name="nombreUsuario" class="form-control form-control-lg" [(ngModel)]="nombreUsuario" name="nombreUsuario"required />
+        <label class="form-label text-light" for="nombreUsuario">Usuario</label>
+      </div>
+        <br>
+        
+      <div class="form-label">
+        <input type="password" id="password" class="form-control form-control-lg" [(ngModel)]="password" name="password" required />
+        <label class="form-label text-light" for="password" >Password</label>
+      </div>
+      
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me">
+          <p class="text-light"> Remember me </p>
+        </label>
+      </div>
+  
+      <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
+      
+        <p class="mb-0 text-light">¿Sos nuevo? <a href="#!" class="text-white-50 fw-bold">  Sign Up</a>
+        </p>
+      
+
+        <p class="mt-5 mb-3 text-muted">© 2021–2022</p>
+    </form>
+  </div>

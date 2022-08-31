@@ -1,0 +1,24 @@
+<div class=" container d-flex justify-content-md-center align-items-center">
+
+
+
+    <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+  
+        <img class="mb-4" src="./assets/imagenes/logo_Arg_Pro.png" width="72" height="57">
+        <h1 class="h3 mb-3 fw-normal">
+          <p class="text-light">Nuevas Skills </p></h1>
+          
+        <div class="form-group">
+          <input type="text" id="nombreSkills" name="nombreSkills" class="form-control form-control-lg" [(ngModel)]="nombreSkills" name="nombreSkills" required />
+          <label class="form-label text-light" for="nombreSkills">Hard and Soft Skills</label>
+        </div>
+          
+        <div class="form-group">
+          <input type="number" id="porcentaje" class="form-control form-control-lg" [(ngModel)]="porcentaje" name="porcentaje" required />
+          <label class="form-label text-light" for="porcentaje">Progreso</label>
+        </div>
+  
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Agregar Skills</button>
+          
+    </form>
+    </div>
