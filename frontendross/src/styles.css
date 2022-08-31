@@ -1,0 +1,38 @@
+.perfil-relativo{
+  position: relative;
+  }
+  
+  .imagen-perfil{
+    position: absolute;
+    top: -140px;
+    }
+  
+  
+    body {
+      background-image: url(assets/imagenes/fondo_0.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-color: whitesmoke;
+      }
+      @media only screen and (max-width: 799px) {
+      body {
+      background-image: url(assets/imagenes/fondo_0.jpg);
+      }
+      }
+
+      ul {
+        list-style: none;
+    }
+
+    .card {
+
+        background-image: url(assets/imagenes/bg_card.jpg);
+  
+    }
+
+    
+
+
+
